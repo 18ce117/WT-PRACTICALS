@@ -1,0 +1,111 @@
+<html>
+<head>
+<center><title>National Workshop On Web Technology</title></center>
+</head>
+<body bgcolor = "dodger blue">
+<form method="get">
+<fieldset>
+<center><legend>National Workshop On Web Technology</legend></center>
+ <a href="#contact">Contact us</a><br><br>
+  First name:
+  <input type="text" name="firstname" id = "firstname" placeholder="firstname"  maxlength="20" onblur = "myfunction()" required />
+(max 20 characters a-z and A-Z)
+<br><br>
+  Middle name:
+<input type="text" name="middlename*" id = "middlename" placeholder="middlesname*" maxlength="20" onblur = "myfunction1()" required/>
+  (max 20 characters a-z and A-Z)<br><br>
+  Last name:
+  <input type="text" name="lastname*" id= "lastname" placeholder="lastname*" maxlength="20" onblur = "myfunction2()" required/>
+  (max 20 characters a-z and A-Z)<br><br>
+  Date of birth:
+  <input type="Date" name="bday" id = "Date of birth" onblur = "myfunction3()" ><br><br>
+  Gender:
+  <input type="radio" name="Gender*" value="male*" id = "Gender" onblur = "myfunction4()" required>Male
+  <input type="radio" name="Gender*" value="female*" required>Female<br><br>
+  Address:<br>
+  <textarea name="Address" rows="4" cols="30" id = "Address" onblur = "myfunction5()"></textarea><br><br>
+  Phone:<br>
+  <select>
+  <option>+91</option>
+  <option>+92</option>
+  <option>+93</option>
+  </select>
+  <input type="text" name="Phone" id = "Phone" maxlength="10" onblur = "myfunction6()" required/>
+  (10 digit number)<br><br>
+ 
+  State:
+   <input type="text" name="state" id = "State" placeholder="state" maxlength="15"  onblur = "myfunction7()" required/>
+  (max 15 characters A-Z)<br><br>
+  City:
+  <input type="text" name="city" id = "City" placeholder="city" maxlength="15" onblur = "myfunction8()" required/>
+  (max 15 characters A-Z)<br><br>
+  Email:
+  <input type="text" name="Email*" id = "Email" onblur = "myfunction9()" required><br><br>
+  <table>
+
+
+  </table><br><br><br>
+<input type="Submit" value="Submit">
+<input type="reset" value="reset">
+</fieldset>
+<h3 id="contact">Contact us</h3>
+<p>+91 9429508982<br>
+vimarshshah9@gmail.com<br>
+</p>
+</form>
+<script>
+
+
+  function myfunction(){
+    var x = document.getElementById("firstname");
+    x.value = x.value.toUpperCase();
+  }
+
+  function myfunction1(){
+    var y = document.getElementById("middlename");
+    y.value = y.value.toUpperCase();
+  }
+
+  function myfunction2(){
+    var z = document.getElementById("lastname");
+    z.value = z.value.toUpperCase();
+  }
+
+  function myfunction3(){
+    var w = document.getElementById("Date of birth");
+    w.value = w.value.toUpperCase();
+  }
+
+  function myfunction4(){
+    var a = document.getElementById("Gender");
+    a.value = a.value.toUpperCase();
+  }
+
+  function myfunction5(){
+    var b = document.getElementById("Address");
+    b.value = b.value.toUpperCase();
+  }
+
+  function myfunction6(){
+    var c = document.getElementById("Phone");
+    c.value = c.value.toUpperCase();
+  }
+
+  function myfunction7(){
+    var d = document.getElementById("State");
+    d.value = d.value.toUpperCase();
+  }
+
+  function myfunction8(){
+    var e = document.getElementById("City");
+    e.value = e.value.toUpperCase();
+  }
+
+  function myfunction9(){
+    var f = document.getElementById("Email");
+    f.value = f.value.toUpperCase();
+  }
+
+</script>
+</body>
+</html>
